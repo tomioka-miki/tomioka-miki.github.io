@@ -1,0 +1,20 @@
+{
+  "name": "tomioka-miki.github.io",
+  "version": "1.0.0",
+  "description": "My dandy Nuxt.js project",
+  "author": "tomioka.miki",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
