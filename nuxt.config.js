@@ -48,7 +48,7 @@ export default {
     */
     extend (config, ctx) {
     }
-  }.
+  },
   router: {
     base: '/tomioka-miki.github.io/'
   }
