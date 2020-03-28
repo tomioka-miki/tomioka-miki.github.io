@@ -1,4 +1,10 @@
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/tomioka-miki.github.io/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
   /*
@@ -15,6 +21,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/tomioka-miki.github.io/favicon.ico' }
     ]
   },
+
+  routerBase,
+
   /*
   ** Customize the progress-bar color
   */
@@ -23,6 +32,8 @@ export default {
   ** Global CSS
   */
   css: [
+    'reset-css',
+    '~/assets/scss/style.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,7 +49,20 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources',
+    'nuxt-fontawesome'
   ],
+  styleResources: {
+    scss: ['~/assets/scss/_variables.scss']
+  },
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
   /*
   ** Build configuration
   */
@@ -48,8 +72,5 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
-  router: {
-    base: '/tomioka-miki.github.io/'
   }
 }
