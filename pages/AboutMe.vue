@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="about_me">
       <div id="profile_img">
             <img src="~/assets/images/neko4.jpg" alt="">
       </div>

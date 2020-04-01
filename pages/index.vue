@@ -1,22 +1,21 @@
 <template>
   <div class="container">
-    <section id="Home"></section>
-    <section id="About_me">
-      <AboutMe/>
-    </section>
-    <section id="Skills">
-
-    </section>
-    <section id="Work"></section>
+    <AboutMe/>
+    <Skills/>
+    <Work/>
   </div>
 </template>
 
 <script>
   import AboutMe from '~/pages/AboutMe';
+  import Skills from '~/pages/Skills';
+  import Work from '~/pages/Work';
 
   export default {
     components: {
       AboutMe,
+      Skills,
+      Work,
     }
   }
 </script>

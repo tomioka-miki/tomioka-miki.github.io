@@ -45,37 +45,61 @@ body {
         }
     }
     main {
-        #About_me {
-            margin: 100px 0px;
-            .container {
-                display: flex;
-                #profile_text {
-                    margin: 60px auto;
-                    width: 50%;
-                    h2 {
-                        padding: 0px 20px;
+        #about_me {
+            display: flex;
+            padding: 100px 0px;
+            #profile_text {
+                margin: 60px auto;
+                width: 50%;
+                div {
+                    padding: 0px 40px;
+                    #name {
+                        font-size: 25px;
+                        margin-bottom: 25px;
                     }
-                    div {
-                        padding: 40px;
-                        #name {
-                            font-size: 25px;
-                            margin-bottom: 25px;
-                        }
-                        p {
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
-                #profile_img {
-                    margin-left: 150px;
-                    img {
-                        object-fit: cover;
-                        object-position: 20% 100%;
-                        height: 500px;
-                        width: 280px;
+                    p {
+                        margin-bottom: 10px;
                     }
                 }
             }
+            #profile_img {
+                margin-left: 150px;
+                img {
+                    object-fit: cover;
+                    object-position: 20% 100%;
+                    height: 500px;
+                    width: 280px;
+                }
+            }
+        }
+        #skills {
+            display: flex;
+            justify-content: center;
+            padding: 120px 0px;
+            h2 {
+                text-align: center;
+            }
+            table {
+                text-align: left;
+                table-layout: fixed;
+                width: 750px;
+                tr {
+                    height: 70px;
+                    th {
+                        width: 180px;
+                    }
+                    td {
+                        overflow-wrap: break-word;
+                        word-wrap: break-word;
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+        #work {
+            display: flex;
+            justify-content: center;
+            padding: 100px 0px;
         }
     }
     .footer {
@@ -87,12 +111,14 @@ body {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 60px;
     font-family: 'Homemade Apple', cursive;
 }
 h2 {
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 50px;
     font-family: 'Homemade Apple', cursive;
+    padding: 0px 20px;
 }
 a {
     color: $color-black;
