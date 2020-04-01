@@ -39,6 +39,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-scrollto.js',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -50,7 +51,8 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    'nuxt-webfontloader'
   ],
   styleResources: {
     scss: ['~/assets/scss/_variables.scss']
@@ -62,6 +64,11 @@ export default {
         icons: ['fas']
       }
     ]
+  },
+  webfontloader: {
+    google: {
+      families: ['Homemade+Apple']
+    }
   },
   /*
   ** Build configuration

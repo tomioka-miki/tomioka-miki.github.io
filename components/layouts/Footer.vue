@@ -1,3 +1,5 @@
 <template>
-<footer class="footer">© my-portfolio.</footer>
+    <footer class="footer">
+        <p>© my-portfolio.</p>
+    </footer>
 </template>

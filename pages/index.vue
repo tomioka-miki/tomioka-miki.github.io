@@ -1,12 +1,24 @@
 <template>
   <div class="container">
-    <p>aaa</p>
+    <section id="Home"></section>
+    <section id="About_me">
+      <AboutMe/>
+    </section>
+    <section id="Skills">
+
+    </section>
+    <section id="Work"></section>
   </div>
 </template>
 
 <script>
-export default {
-}
+  import AboutMe from '~/pages/AboutMe';
+
+  export default {
+    components: {
+      AboutMe,
+    }
+  }
 </script>
 
 <style>
