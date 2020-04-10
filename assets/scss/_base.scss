@@ -97,16 +97,60 @@ body {
             }
         }
         #work {
-            display: flex;
-            justify-content: center;
-            padding: 100px 0px;
+            text-align: center;
+            padding: 100px 0px 140px;
+            .work_items {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0px 100px;
+                .img_wrap {
+                    position: relative;
+                    width: 500px;
+                    margin: 10px;
+                    img {
+                        width: 100%;
+                        filter: drop-shadow(0 0 0.4rem rgba(0,0,0,.3));
+                        cursor: pointer;
+                        transition: all .2s ease;
+                    }
+                    img:hover {
+                        filter: brightness(0.5);
+                    }
+                    p {
+                        position: absolute;
+                        top: 40%;
+                        left: 30%;
+                        font-weight: bold;
+                        font-size: 2em;
+                        color: $color-white;
+                        opacity: 0;
+                    }
+                    img:hover+p{
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
     .footer {
-        height: 100px;
         text-align: center;
-        background-color: #303956;
+        background-color: $color-main;
         color: $color-white;
+        h2 {
+            padding-top: 80px;
+        }
+        div {
+            margin-top: 70px;
+            margin-bottom: 80px;
+            p {
+                margin: 30px 0px;
+            }
+        }
+        #copyright {
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -123,4 +167,45 @@ h2 {
 a {
     color: $color-black;
     text-decoration: none;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .modal-wrap {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        padding: 50px 150px;
+        .modal-inner {
+            background-color: $color-white;
+            border-radius: 5px;
+            .modal-header {
+                position: relative;
+                padding: 20px;
+                border-bottom: solid 1px lightgray;
+                .close_btn {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0px;
+                    right: 0px;
+                    padding: 20px;
+                }
+            }
+            .modal-body {
+                padding: 30px 0px;
+                max-height: 500px;
+                overflow-y: scroll;
+                .modal-img {
+                    img {
+                        height: 350px;
+                        filter: drop-shadow(0 0 0.5rem rgba(0,0,0,.5));
+                    }
+                }
+                .modal-text {
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
 }
