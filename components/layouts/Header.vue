@@ -3,7 +3,7 @@
         <div class="header-inner">
             <div id="header_title">
                 <h1>Meow</h1>
-                <p>tomioka miki's portfolio</p>
+                <p>uchida miki's portfolio</p>
             </div>
             <div id="navbar">
                 <ul>

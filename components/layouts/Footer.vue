@@ -4,8 +4,8 @@
         <div>
             ご意見、ご感想、ご依頼など、お気軽にご連絡ください。
             <br>心よりお待ちしております。
-            <p>mail-address：tomioka.miki24@gmail.com</p>
+            <p>メールアドレス：tomioka.miki24@gmail.com</p>
         </div>
-        <p id="copyright">© Meow tomioka miki's portfolio.</p>
+        <p id="copyright">© Meow uchida miki's portfolio.</p>
     </footer>
 </template>
